@@ -78,6 +78,7 @@ fun BanderaMexico(modifier: Modifier = Modifier) {
     }
 }
 
+
     @Preview(showBackground = true)
     @Composable
     fun BanderaPreview()
