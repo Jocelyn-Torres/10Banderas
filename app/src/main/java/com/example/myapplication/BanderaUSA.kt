@@ -1,53 +1,119 @@
 package com.example.myapplication
 
-import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.size
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.geometry.Offset
-import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import androidx.constraintlayout.compose.ConstraintLayout
+import androidx.constraintlayout.compose.Dimension
 
 @Composable
-fun BanderaEstadosUnidos() {
-    Canvas(
-        modifier = Modifier.fillMaxSize()
-    ) {
-        val ancho = size.width
-        val alto = size.height
+fun BanderaUSA(
+    modifier: Modifier = Modifier,
+) {
 
-        val altoFranja = alto / 13
+    ConstraintLayout(modifier = modifier) {
 
-        for (i in 0 until 13) {
-            drawRect(
-                color = if (i % 2 == 0) Color.Red else Color.White,
-                topLeft = Offset(0f, i * altoFranja),
-                size = Size(ancho, altoFranja)
-            )
-        }
+        val (franjas, azul, estrellas) = createRefs()
 
-        drawRect(
-            color = Color(0xFF000080),
-            size = Size(
-                ancho * 0.4f,
-                alto * 0.54f
-            )
-        )
+        Column(
+            modifier = Modifier
+                .constrainAs(franjas) {
+                    start.linkTo(parent.start)
+                    end.linkTo(parent.end)
+                    top.linkTo(parent.top)
+                    bottom.linkTo(parent.bottom)
 
-        val filas = 5
-        val columnas = 6
+                    width = Dimension.fillToConstraints
+                    height = Dimension.fillToConstraints
+                }
+        ) {
 
-        for (fila in 0 until filas) {
-            for (columna in 0 until columnas) {
-                drawCircle(
-                    color = Color.White,
-                    radius = 4f,
-                    center = Offset(
-                        ancho * 0.4f * (0.12f + columna * 0.15f),
-                        alto * 0.54f * (0.10f + fila * 0.20f)
-                    )
+            repeat(13) { i ->
+
+                Box(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .weight(1f)
+                        .background(
+                            if (i % 2 == 0) {
+                                Color.Red
+                            } else {
+                                Color.White
+                            }
+                        )
                 )
             }
         }
+
+        Box(
+            modifier = Modifier
+                .background(Color.Blue)
+                .constrainAs(azul) {
+                    start.linkTo(parent.start)
+                    top.linkTo(parent.top)
+
+                    width = Dimension.percent(0.50f)
+                    height = Dimension.percent(0.50f)
+                }
+        )
+
+        Column(
+            modifier = Modifier
+                .constrainAs(estrellas) {
+                    start.linkTo(parent.start)
+                    top.linkTo(parent.top)
+
+                    width = Dimension.percent(0.50f)
+                    height = Dimension.percent(0.50f)
+                },
+            verticalArrangement = Arrangement.SpaceEvenly,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+
+            repeat(8) {
+
+                Row(
+                    modifier = Modifier.fillMaxSize().weight(1f),
+                    horizontalArrangement = Arrangement.SpaceEvenly,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+
+                    repeat(6) {
+
+                        Text(
+                            text = "★",
+                            color = Color.White,
+                            fontSize = 18.sp,
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+                }
+            }
+        }
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun BanderaUSAPreview() {
+
+    BanderaUSA(
+        modifier = Modifier
+            .size(width = 300.dp,
+                height = 200.dp
+            )
+    )
 }
