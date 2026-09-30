@@ -35,7 +35,7 @@ fun BanderaArgentina(modifier: Modifier = Modifier) {
             width = Dimension.fillToConstraints
         })
 
-        Box(modifier = Modifier.background(Color.White).constrainAs(der){
+        Box(modifier = Modifier.background(Color.White).constrainAs(medio){
             start.linkTo(lineaguia2)
             end.linkTo(parent.end)
             top.linkTo(parent.top)
