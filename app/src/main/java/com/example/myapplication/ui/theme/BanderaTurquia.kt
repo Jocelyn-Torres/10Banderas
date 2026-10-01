@@ -13,50 +13,80 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.runtime.Composable
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
-import com.example.myapplication.BanderaSuiza
 import androidx.compose.ui.graphics.Path
 
 @Composable
 fun BanderaTurquia(modifier: Modifier = Modifier) {
-    Canvas(modifier = modifier.fillMaxWidth().aspectRatio(1.5f)) {
-        val w = size.width
-        val h = size.height
+    ConstraintLayout(modifier = Modifier.fillMaxSize()) {
 
-        drawRect(color = Color.Red)
+        val(fondo, circ1, circ2, estrellaref) = createRefs()
 
-        drawCircle(color = Color.White,
-                   radius = 150f,
-                   center = Offset(330f, 350f))
+        Box(modifier = Modifier.background(Color.Red).constrainAs(fondo){
+            start.linkTo(parent.start)
+            end.linkTo(parent.end)
+            top.linkTo(parent.top)
+            bottom.linkTo(parent.bottom)
+            width = Dimension.fillToConstraints
+            height = Dimension.fillToConstraints
+        })
 
-        drawCircle(color = Color.Red,
-                   radius = 120f,
-                   center = Offset(370f, 350f))
+        Box(modifier = Modifier.background(Color.White, CircleShape).constrainAs(circ1){
+            start.linkTo(parent.start, margin = 110.dp)
+            top.linkTo(parent.top)
+            bottom.linkTo(parent.bottom, margin = 400.dp)
+            width = Dimension.value(200.dp)
+            height = Dimension.value(200.dp)
+        })
 
-        val estrella = Path()
+        Box(modifier = Modifier.background(Color.Red, CircleShape).constrainAs(circ2){
+            start.linkTo(parent.start, margin = 130.dp)
+            top.linkTo(parent.top)
+            bottom.linkTo(parent.bottom, margin = 330.dp)
+            width = Dimension.value(150.dp)
+            height = Dimension.value(150.dp)
+        })
 
-        estrella.moveTo(500f, 250f)
-        estrella.lineTo(515f, 290f)
-        estrella.lineTo(560f, 290f)
-        estrella.lineTo(525f, 315f)
-        estrella.lineTo(540f, 360f)
-        estrella.lineTo(500f, 335f)
-        estrella.lineTo(460f, 360f)
-        estrella.lineTo(475f, 315f)
-        estrella.lineTo(440f, 290f)
-        estrella.lineTo(485f, 290f)
-        estrella.close()
+        Canvas(modifier = modifier.constrainAs(estrellaref){
+            start.linkTo(parent.start)
+            end.linkTo(parent.end)
+            top.linkTo(parent.top)
+            bottom.linkTo(parent.bottom)
+            width = Dimension.fillToConstraints
+            height = Dimension.fillToConstraints
+        }) {
 
-        drawPath(
-            path = estrella,
-            color = Color.White
-        )
+            val moverX = -50f
+            val moverY = 400f
+
+            val estrella = Path()
+
+            estrella.moveTo(600f + moverX, 300f + moverY)
+            estrella.lineTo(610f + moverX, 340f + moverY)
+            estrella.lineTo(650f + moverX, 340f + moverY)
+            estrella.lineTo(625f + moverX, 365f + moverY)
+            estrella.lineTo(625f + moverX, 410f + moverY)
+            estrella.lineTo(590f + moverX, 385f + moverY)
+            estrella.lineTo(550f + moverX, 410f + moverY)
+            estrella.lineTo(565f + moverX, 365f + moverY)
+            estrella.lineTo(530f + moverX, 340f + moverY)
+            estrella.lineTo(575f + moverX, 340f + moverY)
+
+            estrella.close()
+
+            drawPath(
+                path = estrella,
+                color = Color.White
+            )
+        }
+    }
 
     }
-}
+
 
 
 @Preview(showBackground = true)

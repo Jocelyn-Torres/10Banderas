@@ -13,7 +13,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            BanderaTurquia(modifier = Modifier.fillMaxSize())
+            BanderaTurquia(
+                modifier = Modifier.fillMaxSize())
         }
     }
 }
