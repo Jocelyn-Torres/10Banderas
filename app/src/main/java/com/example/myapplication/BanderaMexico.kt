@@ -1,88 +1,107 @@
 package com.example.myapplication
 
-
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
-import androidx.compose.foundation.gestures.draggable
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.ui.Alignment
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.draw.rotate
-import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
-import androidx.compose.foundation.Image
-import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.layout.ContentScale
 
 @Composable
 fun BanderaMexico(modifier: Modifier = Modifier) {
 
-    ConstraintLayout(modifier = modifier){
-        val (caja,caja1,caja2, escudo) = createRefs()
+    ConstraintLayout(modifier = modifier) {
 
-        val lineguia1 = createGuidelineFromStart(0.33f)
-        val lineguia2 = createGuidelineFromStart(0.66f)
+        val (verde, blanco, rojo, sello) = createRefs()
 
+        val lineaGuia1 = createGuidelineFromStart(0.33f)
+        val lineaGuia2 = createGuidelineFromStart(0.66f)
 
+        // Verde
+        Box(
+            modifier = Modifier
+                .background(Color(0xFF006847))
+                .constrainAs(verde) {
+                    start.linkTo(parent.start)
+                    end.linkTo(lineaGuia1)
+                    top.linkTo(parent.top)
+                    bottom.linkTo(parent.bottom)
 
-        Box(modifier = Modifier.background(Color.Red).constrainAs(caja){
-            start.linkTo(parent.start)
-            end.linkTo(lineguia1)
-            top.linkTo(parent.top)
-            bottom.linkTo(parent.bottom)
-           // verticalBias = 0.5f
-           // horizontalBias = 0.5f
-            height = Dimension.fillToConstraints
-            width = Dimension.fillToConstraints
-        }  )
-
-        Box(modifier = Modifier.background(Color.White).constrainAs(caja1){
-            start.linkTo(lineguia2)
-            end.linkTo(parent.end)
-            top.linkTo(parent.top)
-            bottom.linkTo(parent.bottom)
-            height = Dimension.fillToConstraints
-            width = Dimension.fillToConstraints
-        })
-
-        Box(modifier = Modifier.background(Color.Green).constrainAs(caja2){
-            start.linkTo(lineguia2)
-            end.linkTo(parent.end)
-            top.linkTo(parent.top)
-            bottom.linkTo(parent.bottom)
-            height = Dimension.fillToConstraints
-            width = Dimension.fillToConstraints
-        })
-
-        Image(
-            painter = painterResource(id = R.drawable.escudo),
-            contentDescription = "Escudo de MEXICO",
-            contentScale = ContentScale.Fit,
-            modifier = Modifier.size(100.dp).constrainAs(escudo){
-                start.linkTo(lineguia1)
-                end.linkTo(lineguia2)
-                top.linkTo(parent.top)
-                bottom.linkTo(parent.bottom)
-            }
+                    width = Dimension.fillToConstraints
+                    height = Dimension.fillToConstraints
+                }
         )
+
+        // Blanco
+        Box(
+            modifier = Modifier
+                .background(Color.White)
+                .constrainAs(blanco) {
+                    start.linkTo(lineaGuia1)
+                    end.linkTo(lineaGuia2)
+                    top.linkTo(parent.top)
+                    bottom.linkTo(parent.bottom)
+
+                    width = Dimension.fillToConstraints
+                    height = Dimension.fillToConstraints
+                }
+        )
+
+        // Rojo
+        Box(
+            modifier = Modifier
+                .background(Color(0xFFCE1126))
+                .constrainAs(rojo) {
+                    start.linkTo(lineaGuia2)
+                    end.linkTo(parent.end)
+                    top.linkTo(parent.top)
+                    bottom.linkTo(parent.bottom)
+
+                    width = Dimension.fillToConstraints
+                    height = Dimension.fillToConstraints
+                }
+        )
+
+        // Sello
+        Canvas(
+            modifier = Modifier
+                .size(100.dp)
+                .constrainAs(sello) {
+                    start.linkTo(lineaGuia1)
+                    end.linkTo(lineaGuia2)
+                    top.linkTo(parent.top)
+                    bottom.linkTo(parent.bottom)
+                }
+        ) {
+            drawCircle(
+                color = Color(0xFF006847),
+                radius = size.minDimension / 2
+            )
+
+            drawCircle(
+                color = Color.White,
+                radius = size.minDimension / 2.7f
+            )
+
+            drawCircle(
+                color = Color(0xFFCE1126),
+                radius = size.minDimension / 5
+            )
+        }
     }
 }
 
-
-    @Preview(showBackground = true)
-    @Composable
-    fun BanderaPreview()
-    {
-        BanderaMexico(modifier= Modifier.fillMaxSize())
-    }
-
+@Preview(showBackground = true)
+@Composable
+fun BanderaPreview() {
+    BanderaMexico(
+        modifier = Modifier.fillMaxSize()
+    )
+}

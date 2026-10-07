@@ -12,6 +12,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
+            BanderaMexico(
+                modifier = Modifier.fillMaxSize()
+            )
         }
     }
 }
