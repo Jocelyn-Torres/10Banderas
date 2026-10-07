@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0d7e290a-3013-42fe-b066-4f89296aa044" name="Changes" comment="Bandera de Turquia con constrain sin terminar">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/MainActivity.kt.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/ui/theme/BanderaIsrael.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[LocalEmulator::path=C:\Users\Dell\.android\avd\Pixel_7.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="My Application" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="practica-12-Turquia" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Jocelyn-Torres&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Jocelyn-Torres/10Banderas.git&quot;,
+    &quot;accountId&quot;: &quot;ecf5f354-9518-4bb8-92b3-c0248eb79e01&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3JjcU9LBe3X8n10avYesMibMMzF" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.app.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "com.android.tools.idea.streaming.zoom.toolbar.visible": "false",
+    "git-widget-placeholder": "practica-01-mexico",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Dell/AndroidStudioProjects/MyApplication2/app/src/main/java/com/example/myapplication",
+    "settings.editor.selected.configurable": "device.mirroring"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\AndroidStudioProjects\MyApplication2\app\src\main\java\com\example\myapplication" />
+    </key>
+    <key name="K2MoveDeclarationsDialog.RECENT_PACKAGE_KEY">
+      <recent name="com.example.myapplication" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Trace" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d7e290a-3013-42fe-b066-4f89296aa044" name="Changes" comment="" />
+      <created>1790177931182</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1790177931182</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Commit mexico">
+      <option name="closed" value="true" />
+      <created>1790185896964</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1790185896965</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Commit francia">
+      <option name="closed" value="true" />
+      <created>1790186804419</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1790186804419</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Commit italia">
+      <option name="closed" value="true" />
+      <created>1790218962912</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1790218962912</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Mexico">
+      <option name="closed" value="true" />
+      <created>1790219149661</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1790219149661</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Alemania">
+      <option name="closed" value="true" />
+      <created>1790220307074</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1790220307074</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Japon">
+      <option name="closed" value="true" />
+      <created>1790220516260</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1790220516260</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Canada">
+      <option name="closed" value="true" />
+      <created>1790220750564</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1790220750564</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Colombia">
+      <option name="closed" value="true" />
+      <created>1790220937870</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1790220937870</updated>
+    </task>
+    <task id="LOCAL-00009" summary="USA">
+      <option name="closed" value="true" />
+      <created>1790221117608</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1790221117608</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Brasil">
+      <option name="closed" value="true" />
+      <created>1790221409567</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1790221409567</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Argentina">
+      <option name="closed" value="true" />
+      <created>1790221530241</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1790221530241</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Bandera de Mexico con Constrain">
+      <option name="closed" value="true" />
+      <created>1790668553905</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1790668553905</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Bandera de Mexico con Constrain">
+      <option name="closed" value="true" />
+      <created>1790668905307</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1790668905307</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Bandera de Francia con Constrain">
+      <option name="closed" value="true" />
+      <created>1790670473805</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1790670473805</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Bandera de Italia con Constrain">
+      <option name="closed" value="true" />
+      <created>1790670967473</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1790670967473</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Bandera de Alemania con Constrain">
+      <option name="closed" value="true" />
+      <created>1790671179800</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1790671179800</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Bandera de Alemania con Constrain">
+      <option name="closed" value="true" />
+      <created>1790672041959</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1790672041959</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Bandera de Canada con Constrain">
+      <option name="closed" value="true" />
+      <created>1790673036880</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1790673036880</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Bandera de Colombia con Constrain">
+      <option name="closed" value="true" />
+      <created>1790673873093</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1790673873093</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Bandera de USA con Constrain">
+      <option name="closed" value="true" />
+      <created>1790705428515</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1790705428515</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Bandera de Brasil con Constrain">
+      <option name="closed" value="true" />
+      <created>1790785435231</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1790785435231</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Bandera de Argentina con Constrain">
+      <option name="closed" value="true" />
+      <created>1790797036159</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1790797036159</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Bandera de Argentina con Constrain modificado">
+      <option name="closed" value="true" />
+      <created>1790797098442</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1790797098442</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Bandera de Suiza">
+      <option name="closed" value="true" />
+      <created>1790799605220</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1790799605220</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Bandera de Suiza con constrain">
+      <option name="closed" value="true" />
+      <created>1790830980997</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1790830980997</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Bandera de Turquia">
+      <option name="closed" value="true" />
+      <created>1790834264572</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1790834264572</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Bandera de Turquia con constrain">
+      <option name="closed" value="true" />
+      <created>1790879657787</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1790879657787</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Bandera de Turquia con constrain sin terminar">
+      <option name="closed" value="true" />
+      <created>1791344095932</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1791344095933</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit francia" />
+    <MESSAGE value="Commit italia" />
+    <MESSAGE value="Mexico" />
+    <MESSAGE value="Alemania" />
+    <MESSAGE value="Japon" />
+    <MESSAGE value="Canada" />
+    <MESSAGE value="Colombia" />
+    <MESSAGE value="USA" />
+    <MESSAGE value="Brasil" />
+    <MESSAGE value="Argentina" />
+    <MESSAGE value="Bandera de Mexico con Constrain" />
+    <MESSAGE value="Bandera de Francia con Constrain" />
+    <MESSAGE value="Bandera de Italia con Constrain" />
+    <MESSAGE value="Bandera de Alemania con Constrain" />
+    <MESSAGE value="Bandera de Canada con Constrain" />
+    <MESSAGE value="Bandera de Colombia con Constrain" />
+    <MESSAGE value="Bandera de USA con Constrain" />
+    <MESSAGE value="Bandera de Brasil con Constrain" />
+    <MESSAGE value="Bandera de Argentina con Constrain" />
+    <MESSAGE value="Bandera de Argentina con Constrain modificado" />
+    <MESSAGE value="Bandera de Suiza" />
+    <MESSAGE value="Bandera de Suiza con constrain" />
+    <MESSAGE value="Bandera de Turquia" />
+    <MESSAGE value="Bandera de Turquia con constrain" />
+    <MESSAGE value="Bandera de Turquia con constrain sin terminar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bandera de Turquia con constrain sin terminar" />
+  </component>
+  <component name="play_dynamic_filters_status">
+    <option name="appIdToCheckInfo">
+      <map>
+        <entry key="com.example.myapplication">
+          <value>
+            <CheckInfo lastCheckTimestamp="1791344065339" />
+          </value>
+        </entry>
+        <entry key="com.example.myapplication.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1791344065341" />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

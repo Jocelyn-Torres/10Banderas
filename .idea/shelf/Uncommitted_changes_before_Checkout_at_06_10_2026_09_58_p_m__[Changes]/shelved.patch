@@ -1,0 +1,18 @@
+Index: app/src/main/java/com/example/myapplication/MainActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.myapplication\r\n\r\nimport android.os.Bundle\r\nimport androidx.activity.ComponentActivity\r\nimport androidx.activity.compose.setContent\r\nimport androidx.compose.foundation.layout.fillMaxSize\r\nimport androidx.compose.ui.Modifier\r\nimport com.example.myapplication.ui.theme.BanderaTurquia\r\n\r\nclass MainActivity : ComponentActivity() {\r\n\r\n    override fun onCreate(savedInstanceState: Bundle?) {\r\n        super.onCreate(savedInstanceState)\r\n\r\n        setContent {\r\n            BanderaTurquia(modifier = Modifier.fillMaxSize())\r\n        }\r\n    }\r\n}
+===================================================================
+diff --git a/app/src/main/java/com/example/myapplication/MainActivity.kt b/app/src/main/java/com/example/myapplication/MainActivity.kt
+--- a/app/src/main/java/com/example/myapplication/MainActivity.kt	(revision 50b79552b0caeb771bf650a71795c32e7fafd96f)
++++ b/app/src/main/java/com/example/myapplication/MainActivity.kt	(date 1791345300260)
+@@ -13,7 +13,7 @@
+         super.onCreate(savedInstanceState)
+ 
+         setContent {
+-            BanderaTurquia(modifier = Modifier.fillMaxSize())
++            BanderaIsrael(modifier = Modifier.fillMaxSize())
+         }
+     }
+ }
+\ No newline at end of file
